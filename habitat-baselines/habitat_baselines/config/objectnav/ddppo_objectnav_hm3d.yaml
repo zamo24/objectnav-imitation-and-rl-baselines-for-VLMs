@@ -66,11 +66,11 @@ habitat_baselines:
       # The PyTorch distributed backend to use
       distrib_backend: NCCL
       # Visual encoder backbone
-      pretrained_weights: data/ddppo-models/gibson-2plus-resnet50.pth
+      pretrained_weights: data/models/resnet50.pth
       # Initialize with pretrained weights
-      pretrained: False
+      pretrained: True
       # Initialize just the visual encoder backbone with pretrained weights
-      pretrained_encoder: False
+      pretrained_encoder: True
       # Whether or not the visual encoder backbone will be trained.
       train_encoder: True
       # Whether or not to reset the critic linear layer
