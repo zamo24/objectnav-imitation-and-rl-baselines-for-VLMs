@@ -113,3 +113,5 @@ fix_hm3d_dataset.py
 inspect_dataset.py
 merge_fix_dataset.py
 populate_goals.py
+remap_resnet.py
+wrap_resnet.py
