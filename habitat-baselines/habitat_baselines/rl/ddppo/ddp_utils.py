@@ -48,7 +48,7 @@ DEFAULT_PORT_RANGE = 127
 DEFAULT_MAIN_ADDR = "127.0.0.1"
 
 SLURM_JOBID = os.environ.get("SLURM_JOB_ID", None)
-RESUME_STATE_BASE_NAME = ".habitat-resume-state"
+RESUME_STATE_BASE_NAME = "latest"
 
 
 def is_slurm_job() -> bool:
@@ -221,7 +221,7 @@ def load_resume_state(
     if rank0_only():
         logger.info(f"Loading resume state: {filename}")
 
-    return torch.load(filename, map_location="cpu")
+    return torch.load(filename, map_location="cpu", weights_only=False)
 
 
 def requeue_job():
