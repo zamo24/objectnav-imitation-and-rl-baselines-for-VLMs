@@ -115,3 +115,4 @@ merge_fix_dataset.py
 populate_goals.py
 remap_resnet.py
 wrap_resnet.py
+dist_train.sh

@@ -48,7 +48,7 @@ DEFAULT_PORT_RANGE = 127
 DEFAULT_MAIN_ADDR = "127.0.0.1"
 
 SLURM_JOBID = os.environ.get("SLURM_JOB_ID", None)
-RESUME_STATE_BASE_NAME = "latest"
+RESUME_STATE_BASE_NAME = ".habitat-resume-state.pth"
 
 
 def is_slurm_job() -> bool:

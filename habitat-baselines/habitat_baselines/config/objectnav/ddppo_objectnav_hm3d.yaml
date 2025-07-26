@@ -66,7 +66,7 @@ habitat_baselines:
       # The PyTorch distributed backend to use
       distrib_backend: NCCL
       # Visual encoder backbone
-      pretrained_weights: data/models/gibson-2plus-resnet50.pth
+      pretrained_weights: data/models/resnet.pth
       # Initialize with pretrained weights
       pretrained: False
       # Initialize just the visual encoder backbone with pretrained weights
